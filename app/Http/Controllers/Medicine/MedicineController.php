@@ -72,6 +72,8 @@ class MedicineController extends Controller
                'asd' => $a
 
             ] */
+
+            ///TESTTTTTTTTTTTTTTTT
     }
 
     /**
