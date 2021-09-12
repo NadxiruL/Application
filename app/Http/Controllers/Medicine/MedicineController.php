@@ -23,7 +23,7 @@ class MedicineController extends Controller
 
             'medicines' =>$medicines,
           
-            
+            //Test
 
         ]);
 
