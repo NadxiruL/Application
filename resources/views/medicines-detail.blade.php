@@ -11,8 +11,8 @@
     <div class="card" style="width: 18rem;">
   <img src="../gambar/yoo.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"> {{ $a->name }}</h5>
-    <p class="card-text">{{ $a->description }}</p>
+    <h5 class="card-title"> {{ $medicine->name }}</h5>
+    <p class="card-text">{{ $medicine->description }}</p>
     <a href="#" class="btn btn-primary">Kiss me!</a> 
   </div>
 </div>

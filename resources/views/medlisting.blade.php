@@ -11,7 +11,7 @@
     <table class="table">
     <thead>
       <tr>
-        <th>Num</th>
+        <th>Obat</th>
         <th>Name</th>
         <th>Price</th>
       </tr>
@@ -26,10 +26,12 @@
       
       <tr>
         <td>{{($medicines->currentPage()-1)*$medicines->perPage()+$key+1}}</td>
-        <td>{{$medicine->name}}
 
-        
+        <td>
+          <a href="{{ route('medicines-detail' , $medicine->id) }}">
+            {{$medicine->name}}</a>
         </td>
+
         <td>{{$medicine->price}}</td>
       </tr>
  

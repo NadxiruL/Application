@@ -15,7 +15,7 @@ class MedicineController extends Controller
      */
     public function index()
     {
-    
+        
                              //select column mana yang nak sahaja  //5 data setiap page
         $medicines =  Medicine::  select(['name','price'])   ->paginate(5);
 
@@ -61,19 +61,19 @@ class MedicineController extends Controller
     public function show($id)
     {
         //
-            $a = Medicine::find($id);
+            $medicine = Medicine::find($id);
 
-            return view('medicines-detail', compact('a','b'));
+            //return view('medicines-detail', compact('a')); lebih singkat
+
+            return view('medicines-detail', [
+
+                'medicines'=> $medicine
+
+
+            ]);
        
-            /*compact lagi singkat
-            [
+
             
-                dia akan 'asd' dekat view
-               'asd' => $a
-
-            ] */
-
-            ///TESTTTTTTTTTTTTTTTT
     }
 
     /**
