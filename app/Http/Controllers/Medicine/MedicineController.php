@@ -68,7 +68,7 @@ class MedicineController extends Controller
             return view('medicines-detail', [
 
                 'medicines'=> $medicine
-
+//KOmen
 
             ]);
        
